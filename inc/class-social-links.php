@@ -69,9 +69,9 @@ class SocialLinks
         );
 
         add_settings_field(
-            'twiiter', // id
-            'Twiiter', // title
-            array($this, 'twiiter_callback'), // callback
+            'twitter', // id
+            'Twitter', // title
+            array($this, 'twitter_callback'), // callback
             'social-links-admin', // page
             'social_links_setting_section' // section
         );
@@ -116,8 +116,8 @@ class SocialLinks
             $sanitary_values['facebook'] = sanitize_text_field($input['facebook']);
         }
 
-        if (isset($input['twiiter'])) {
-            $sanitary_values['twiiter'] = sanitize_text_field($input['twiiter']);
+        if (isset($input['twitter'])) {
+            $sanitary_values['twitter'] = sanitize_text_field($input['twitter']);
         }
 
         if (isset($input['instagram'])) {
@@ -156,11 +156,11 @@ class SocialLinks
         );
     }
 
-    public function twiiter_callback()
+    public function twitter_callback()
     {
         printf(
-            '<input class="regular-text" type="text" name="cbwp_social_links[twiiter]" id="twiiter" value="%s">',
-            isset($this->social_links_options['twiiter']) ? esc_attr($this->social_links_options['twiiter']) : ''
+            '<input class="regular-text" type="text" name="cbwp_social_links[twitter]" id="twitter" value="%s">',
+            isset($this->social_links_options['twitter']) ? esc_attr($this->social_links_options['twitter']) : ''
         );
     }
 
