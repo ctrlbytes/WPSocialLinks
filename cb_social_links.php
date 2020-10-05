@@ -4,7 +4,7 @@
  * Plugin Name: WP Social Links
  * Plugin URI: https://github.com/ctrlbytes/WPSocialLinks
  * Description: Add Social Links for wordpress your site.
- * Version: 1.0
+ * Version: 1.1
  * Author: CtrlBytes
  * Author URI: https://ctrlbytes.com/
  **/
